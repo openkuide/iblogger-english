@@ -55,4 +55,25 @@ In English, tenses indicate the time of an action. Although there are 12 tenses,
 | **Perfect Continuous**| I have been coding for 3 hours. | I had been coding since noon. | I will have been coding for hours. |
 
 ---
+
+## 💾 កិរិយាសព្ទ IT ប្រើប្រាស់ញឹកញាប់ និងកាល (Common IT Verbs & Tenses)
+
+ខាងក្រោមនេះជាបញ្ជីកិរិយាសព្ទសំខាន់ៗក្នុងវិស័យ IT ដែលរៀបចំជាបីទម្រង់ (V1, V2, V3) សម្រាប់ប្រើប្រាស់ក្នុងកាលផ្សេងៗគ្នា៖
+
+| Base Form (V1 - បច្ចុប្បន្ន) | Past Simple (V2 - អតីត) | Past Participle (V3 - បរិបូណ៌) | អត្ថន័យ (Meaning) | ឧទាហរណ៍ការប្រើប្រាស់ (Example) |
+| :--- | :--- | :--- | :--- | :--- |
+| **build** | built | built | សាងសង់/បង្កើត | We **build** the code. / I **built** it yesterday. |
+| **run** | ran | run | ដំណើរការ/រត់ | The script **runs**. / I **ran** the command. / The build has **run**. |
+| **write** | wrote | written | សរសេរ | She **writes** tests. / He **wrote** comments. / It has been **written**. |
+| **find** | found | found | រកឃើញ | We **find** bugs. / I **found** a memory leak. |
+| **deploy** | deployed | deployed | ដាក់ឱ្យដំណើរការ | They **deploy** weekly. / We **deployed** to staging. |
+| **fix** | fixed | fixed | ជួសជុល | **Fix** the bug. / I **fixed** the compilation error. |
+| **debug** | debugged | debugged | ស្វែងរកកំហុស | She **debugs** the code. / He **debugged** the thread starvation. |
+| **commit** | committed | committed | រក្សាទុកបម្រែបម្រួល | Please **commit** changes. / I **committed** the patch. |
+| **merge** | merged | merged | បញ្ចូលគ្នា | **Merge** the PR. / The branches were **merged**. |
+| **configure** | configured | configured | កំណត់រចនាសម្ព័ន្ធ | **Configure** the port. / We **configured** the database pool. |
+| **implement** | implemented | implemented | អនុវត្ត/បង្កើត | **Implement** the API. / We **implemented** JWT login. |
+| **optimize** | optimized | optimized | បង្កើនប្រសិទ្ធភាព | **Optimize** queries. / The JVM **optimized** execution speed. |
+
+---
 🔗 **[ត្រឡប់ទៅមេរៀនមុន (Back to Module Index)](../README.md)**
