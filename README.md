@@ -57,6 +57,16 @@ Welcome to the complete English learning path. Below is the structured roadmap d
   - [03. Agile, Standups & Team Communication (ការប្រាស្រ័យទាក់ទងក្នុងក្រុមការងារ Agile/Scrum)](06-technical-it-english/03-agile-team-communication/README.md)
   - [04. Tech Job Interviews & Resumes in English (ការរៀបចំ Resume និងការសម្ភាសន៍ការងារ IT)](06-technical-it-english/04-interviews-resumes/README.md)
 
+### 📂 [Module 7: Daily Practice Scripts (ការអនុវត្តការនិយាយប្រចាំថ្ងៃ)](07-daily-practice-scripts/README.md)
+*កម្រងអត្ថបទ និងស្គ្រីបសម្រាប់ទន្ទេញចាំ និងហាត់និយាយម្នាក់ឯងជារៀងរាល់ថ្ងៃ ដែលអាចយកទៅប្រើប្រាស់ផ្ទាល់នៅក្នុងការងារ IT។*
+*A collection of speaking scripts and paragraphs designed for daily memorization and solo practice, directly applicable to your IT work.*
+
+  - [01. Daily Standup Scripts (ស្គ្រីបប្រជុំ Standup ប្រចាំថ្ងៃ)](07-daily-practice-scripts/01-daily-standup/README.md)
+  - [02. Peer Review & Code Walkthroughs (ស្គ្រីបពន្យល់កូដ និងការ Review)](07-daily-practice-scripts/02-code-walkthrough/README.md)
+  - [03. Asking for Help & Debugging (ស្គ្រីបសុំជំនួយ និងការដោះស្រាយ Bug)](07-daily-practice-scripts/03-asking-for-help/README.md)
+  - [04. Handling Incident Reports (ស្គ្រីបរាយការណ៍បញ្ហាបន្ទាន់)](07-daily-practice-scripts/04-incident-reports/README.md)
+  - [05. Workplace Small Talk (ស្គ្រីបនិយាយលេងនៅកន្លែងធ្វើការ)](07-daily-practice-scripts/05-workplace-smalltalk/README.md)
+
 ---
 
 ## 🛠️ របៀបសិក្សា (How to Use This Guide)
