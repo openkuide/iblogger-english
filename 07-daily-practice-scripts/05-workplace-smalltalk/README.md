@@ -1,35 +1,53 @@
 # Workplace Small Talk (ស្គ្រីបនិយាយលេងនៅកន្លែងធ្វើការ)
 
-ការនិយាយលេងទូទៅ ឬក្រៅផ្លូវការ (Small Talk) នៅក្បែរម៉ាស៊ីនឆុងកាហ្វេ ឬមុនពេលចាប់ផ្តើមប្រជុំ ជួយបង្កើនបរិយាកាសការងារឱ្យមានភាពស្និទ្ធស្នាល និងកាត់បន្ថយភាពតានតឹង។
+ស្គ្រីបសម្រាប់ជជែកលេងក្រៅផ្លូវការជាមួយមិត្តរួមការងារ និងដៃគូសហការ។
 
-Engaging in casual workplace conversations (small talk) near the coffee machine or before a meeting starts helps build rapport and ease tension.
+Workplace small talk scripts in both Professional and Natural/Casual styles.
 
 ---
 
 ## 🗣️ ស្គ្រីបទី ១៖ ការសួរសុខទុក្ខនៅដើមសប្តាហ៍ (Monday Morning / Weekend talk)
 
-> "Hi **[Dara]**, good morning. How was your weekend? Did you do anything fun? ... Oh, that sounds great! Personally, I stayed home, did some gardening, and caught up on some reading. Ready for a busy week ahead?"
+### 💼 Professional Version
+> "Hi Dara, good morning. How was your weekend? Did you do anything fun? Personally, I stayed home and did some reading. Are you ready for a busy week ahead?"
 
-### 🗣️ អានជាសំឡេងខ្មែរសម្រួល (Khmer Translation)
-> «សួស្តី **[តារា]** អរុណសួស្តី។ ចុងសប្តាហ៍របស់អ្នកយ៉ាងម៉េចដែរ? បានទៅលេងណាខ្លះអត់? ... អូ មើលទៅគួរឱ្យសប្បាយណាស់! ចំណែកខ្ញុំវិញ នៅតែផ្ទះ ធ្វើសួនច្បារបន្តិចបន្តួច និងឆ្លៀតអានសៀវភៅខ្លះ។ រួចរាល់សម្រាប់សប្តាហ៍ដ៏មមាញឹកខាងមុខនេះហើយឬនៅ?»
+### 🔥 Natural/Casual Version (Slay!)
+> "Hey Dara, morning! **How'd your weekend go**? **Do anything fun**? ... Oh, nice! I **mostly just chilled at home** and **caught up on some reading**. **Ready to tackle the week**?"
+
+* **Key Vocabulary:**
+  - *How'd your weekend go?:* តើចុងសប្តាហ៍របស់អ្នកយ៉ាងម៉េចដែរ? (instead of *How was your weekend?*)
+  - *mostly just chilled:* ភាគច្រើនគឺគ្រាន់តែសម្រាកសម្រាលខ្លួន (instead of *personally, I stayed home*)
+  - *Ready to tackle the week?:* រួចរាល់ដើម្បីប្រយុទ្ធនឹងការងារសប្តាហ៍ថ្មីហើយឬនៅ? (instead of *Are you ready for a busy week?*)
 
 ---
 
 ## 🗣️ ស្គ្រីបទី ២៖ ការជជែកគ្នាក្បែរម៉ាស៊ីនឆុងកាហ្វេ (Coffee break talk)
 
-> "Hey, are you grabbing some coffee? I was thinking of trying that new coffee shop across the street. Would you like to join me? Or have you tried their coffee before? I heard their espresso is quite good."
+### 💼 Professional Version
+> "Hey, are you grabbing some coffee? I was thinking of trying that new coffee shop across the street. Would you like to join me? I heard their espresso is quite good."
 
-### 🗣️ អានជាសំឡេងខ្មែរសម្រួល (Khmer Translation)
-> «ហេ តើអ្នកកំពុងទៅឆុងកាហ្វែមែនទេ? ខ្ញុំកំពុងគិតចង់សាកហាងកាហ្វេថ្មីនៅម្ខាងផ្លូវនោះ។ ចង់ទៅជាមួយគ្នាទេ? ឬមួយអ្នកធ្លាប់សាកកាហ្វេរបស់ពួកគេហើយ? ខ្ញុំឮគេថា espresso របស់ពួកគេឆ្ងាញ់គួរសម។»
+### 🔥 Natural/Casual Version (Slay!)
+> "Hey, **getting some coffee**? I was **planning to hit up** that new coffee spot across the street. **Wanna come along**? I heard their **espresso is solid**."
+
+* **Key Vocabulary:**
+  - *hit up:* ទៅលេង/ទៅសាកល្បង (instead of *try*)
+  - *wanna come along?:* ចង់ទៅជាមួយគ្នាទេ? (instead of *would you like to join me?*)
+  - *solid:* ល្អ/ឆ្ងាញ់/មានគុណភាព (instead of *quite good*)
 
 ---
 
 ## 🗣️ ស្គ្រីបទី ៣៖ មុនពេលចាប់ផ្តើមប្រជុំផ្លូវការ (Before the meeting starts)
 
-> "While we're waiting for the others to join, how is the weather over there? It's been raining cats and dogs here since this morning. Hopefully, the connection holds up during our presentation today."
+### 💼 Professional Version
+> "While we are waiting for the others to join, how is the weather over there? It has been raining very heavily here since this morning."
 
-### 🗣️ អានជាសំឡេងខ្មែរសម្រួល (Khmer Translation)
-> «កំឡុងពេលដែលយើងកំពុងរង់ចាំអ្នកដទៃចូលរួម តើអាកាសធាតុនៅខាងនោះយ៉ាងម៉េចដែរ? នៅទីនេះភ្លៀងធ្លាក់ខ្លាំងណាស់តាំងពីព្រឹកមកម្ល៉េះ។ សង្ឃឹមថាការតភ្ជាប់អ៊ីនធឺណិតនឹងមិនមានបញ្ហាឡើយកំឡុងពេលធ្វើបទបង្ហាញរបស់យើងនៅថ្ងៃនេះ។»
+### 🔥 Natural/Casual Version (Slay!)
+> "While we're **waiting for everyone to hop on**, how's the weather on your end? It's **been pouring down** here since this morning."
+
+* **Key Vocabulary:**
+  - *hop on:* ចូលរួមប្រជុំអនឡាញ (instead of *join*)
+  - *pouring down / raining cats and dogs:* ភ្លៀងធ្លាក់ខ្លាំងណាស់ (instead of *raining very heavily*)
+  - *on your end:* នៅខាងទីតាំងរបស់អ្នក (instead of *over there*)
 
 ---
 🔗 **[ត្រឡប់ទៅមេរៀនមុន (Back to Module Index)](../README.md)**

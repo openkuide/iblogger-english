@@ -1,35 +1,53 @@
 # Peer Review & Code Walkthroughs (ស្គ្រីបពន្យល់កូដ និងការ Review)
 
-នៅពេលអ្នកបង្កើត Pull Request ឬត្រូវធ្វើការ Review កូដជាមួយសមាជិកក្រុម ឬ Senior Developer ការចេះប្រើប្រាស់ឃ្លា និងកថាខណ្ឌខាងក្រោមនឹងជួយឱ្យការបង្ហាញកូដរបស់អ្នកមានភាពច្បាស់លាស់ និងមានលក្ខណៈវិជ្ជាជីវៈ។
+ខាងក្រោមនេះជាស្គ្រីបសម្រាប់ពន្យល់កូដរបស់អ្នកកំឡុងពេល Review ជាមួយសមាជិកក្រុម ឬ Senior Developer។
 
-During code reviews or pair programming, using these scripts allows you to walk teammates or senior developers through your code changes clearly and professionally.
+Below are the speaking scripts for code walkthroughs, split into Professional and Natural/Casual styles.
 
 ---
 
 ## 🗣️ ស្គ្រីបទី ១៖ ការណែនាំអំពីកូដថ្មី (Introducing your PR)
 
-> "Hi team, I’ve put together this Pull Request to address the **[memory leak issue in the connection pooling]**. The main goal is to ensure that database connections are properly closed after each transaction. I’ve refactored the database utility class to use a try-with-resources statement, which guarantees that connections are closed even if an exception occurs."
+### 💼 Professional Version
+> "Hi team, I’ve created this Pull Request to address the memory leak issue in the connection pooling. The main goal is to ensure database connections are properly closed after each transaction."
 
-### 🗣️ អានជាសំឡេងខ្មែរសម្រួល (Khmer Translation)
-> «សួស្តីក្រុមការងារ ខ្ញុំបានរៀបចំ Pull Request នេះឡើង ដើម្បីដោះស្រាយ **[memory leak issue in the connection pooling]**។ គោលបំណងចម្បងគឺធានាថាការតភ្ជាប់មូលដ្ឋានទិន្នន័យត្រូវបានបិទត្រឹមត្រូវបន្ទាប់ពី transaction នីមួយៗ។ ខ្ញុំបាន refactor class ជំនួយមូលដ្ឋានទិន្នន័យឱ្យប្រើប្រាស់ try-with-resources statement ដែលធានាថាការតភ្ជាប់ត្រូវបានបិទ ទោះបីជាមាន exception កើតឡើងក៏ដោយ។»
+### 🔥 Natural/Casual Version (Slay!)
+> "Hey guys, I **opened this PR** to **fix the memory leak** we've been having with the connection pool. The **whole point of this** is to make sure we're **cleaning up connections** after each transaction."
+
+* **Key Vocabulary:**
+  - *opened a PR:* បង្កើត Pull Request (instead of *created*)
+  - *whole point of this:* គោលបំណងចម្បងនៃកូដនេះ (instead of *main goal*)
+  - *cleaning up:* បោសសម្អាត/បិទចោល (instead of *properly closed*)
 
 ---
 
 ## 🗣️ ស្គ្រីបទី ២៖ ការនាំដើរមើលកូដតាមបន្ទាត់ (Walking through specific files)
 
-> "If we look at **[DatabaseConnection.java]**, line **[45]**, you will see that I've replaced the manual connection close block. Down here on line **[60]**, I also added a check to handle instances where the pool returns a null connection. This prevents the NullPointerException we saw in the logs last week."
+### 💼 Professional Version
+> "If we look at DatabaseConnection.java, line 45, you will see that I've replaced the manual connection close block to prevent the NullPointerException we saw in the logs."
 
-### 🗣️ អានជាសំឡេងខ្មែរសម្រួល (Khmer Translation)
-> «ប្រសិនបើយើងមើលទៅលើ **[DatabaseConnection.java]** បន្ទាត់ទី **[45]** អ្នកនឹងឃើញថាខ្ញុំបានជំនួស manual connection close block។ នៅខាងក្រោមនេះ បន្ទាត់ទី **[60]** ខ្ញុំក៏បានបន្ថែមការឆែកដើម្បីដោះស្រាយករណីដែល pool ប្រគល់ null connection មកវិញ។ នេះការពារ NullPointerException ដែលយើងបានឃើញនៅក្នុង logs កាលពីសប្តាហ៍មុន។»
+### 🔥 Natural/Casual Version (Slay!)
+> "If we **hop over** to DatabaseConnection.java, line 45, **you can see** I **ditched the manual close block**. This should **kill the NullPointerException** that showed up in the logs."
+
+* **Key Vocabulary:**
+  - *hop over to:* ផ្លាស់ទីភ្នែកទៅមើល (instead of *look at*)
+  - *ditched:* បោះបង់ចោល/ជំនួស (instead of *replaced/removed*)
+  - *kill:* កម្ចាត់/ដោះស្រាយ (instead of *prevent/resolve*)
 
 ---
 
-## 🗣️ ស្គ្រីបទី ៣៖ ការសុំយោបល់កែលម្អ (Asking for feedback / optimization tips)
+## 🗣️ ស្គ្រីបទី ៣៖ ការសុំយោបល់កែលម្អ (Asking for feedback)
 
-> "I'm fairly confident with this implementation, but I wanted to get your opinion on the configuration setup on line **[120]**. Do you think the connection timeout limit is too high, or should we keep it as it is? Please let me know if you see any room for optimization."
+### 💼 Professional Version
+> "I am confident with this implementation, but I wanted to get your opinion on the configuration setup on line 120. Please let me know if you see any room for optimization."
 
-### 🗣️ អានជាសំឡេងខ្មែរសម្រួល (Khmer Translation)
-> «ខ្ញុំមានទំនុកចិត្តគួរសមជាមួយការអនុវត្តនេះ ប៉ុន្តែខ្ញុំចង់សុំយោបល់របស់អ្នកលើការកំណត់រចនាសម្ព័ន្ធនៅបន្ទាត់ទី **[120]**។ តើអ្នកគិតថាដែនកំណត់ connection timeout ខ្ពស់ពេកទេ ឬយើងគួរតែរក្សាវាទុកដដែល? សូមប្រាប់ខ្ញុំផង ប្រសិនបើអ្នកឃើញចំណុចណាដែលអាចធ្វើឱ្យប្រសើរឡើងបាន។»
+### 🔥 Natural/Casual Version (Slay!)
+> "I'm **pretty good with how this looks**, but I’d love to **get your eyes on** the config setup on line 120. **Let me know if I missed anything** or if we can make it cleaner."
+
+* **Key Vocabulary:**
+  - *pretty good with...:* មានទំនុកចិត្តលើ (instead of *confident with*)
+  - *get your eyes on:* សុំអ្នកជួយមើល (instead of *get your opinion/look at*)
+  - *make it cleaner:* ធ្វើឱ្យកូដមានរបៀប/ប្រសើរជាងមុន (instead of *optimize*)
 
 ---
 🔗 **[ត្រឡប់ទៅមេរៀនមុន (Back to Module Index)](../README.md)**
