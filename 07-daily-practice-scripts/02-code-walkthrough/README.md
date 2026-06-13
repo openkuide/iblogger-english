@@ -1,8 +1,8 @@
 # Peer Review & Code Walkthroughs (ស្គ្រីបពន្យល់កូដ និងការ Review)
 
-ខាងក្រោមនេះជាស្គ្រីបសម្រាប់ពន្យល់កូដរបស់អ្នកកំឡុងពេល Review ជាមួយសមាជិកក្រុម ឬ Senior Developer។
+ជំពូកនេះជួយអ្នកក្នុងការនាំសមាជិកក្រុម ឬ Senior Developer មើលកូដរបស់អ្នកកំឡុងពេល Review។
 
-Below are the speaking scripts for code walkthroughs, split into Professional and Natural/Casual styles.
+Practice walk-through scripts for code reviews, including spoken linking guides and Khmer translations.
 
 ---
 
@@ -14,10 +14,12 @@ Below are the speaking scripts for code walkthroughs, split into Professional an
 ### 🔥 Natural/Casual Version (Slay!)
 > "Hey guys, I **opened this PR** to **fix the memory leak** we've been having with the connection pool. The **whole point of this** is to make sure we're **cleaning up connections** after each transaction."
 
-* **Key Vocabulary:**
-  - *opened a PR:* បង្កើត Pull Request (instead of *created*)
-  - *whole point of this:* គោលបំណងចម្បងនៃកូដនេះ (instead of *main goal*)
-  - *cleaning up:* បោសសម្អាត/បិទចោល (instead of *properly closed*)
+* **🗣️ Spoken & Linking Guide (គន្លឹះភ្ជាប់សំឡេង):**
+  - **opened this** -> និយាយភ្ជាប់គ្នាថា **"ope-ndis"** (/əʊ.pənd-ðɪs/)
+  - **point of** -> និយាយភ្ជាប់គ្នាថា **"poin-tov"** (/pɔɪnt-ɒv/)
+  - **cleaning up** -> និយាយភ្ជាប់គ្នាថា **"clea-ning-up"**
+* **💬 អត្ថន័យជាភាសាខ្មែរ (Khmer Meaning):**
+  - *«សួស្តីអ្នកទាំងអស់គ្នា ខ្ញុំបានបង្កើត PR នេះ ដើម្បីជួសជុល memory leak ដែលយើងធ្លាប់ជួបប្រទះជាមួយ connection pool។ គោលបំណងចម្បងនៃកូដនេះគឺដើម្បីធានាថាយើងបិទ/បោសសម្អាតរាល់ការតភ្ជាប់ (connections) ក្រោយពេលដំណើរការ transaction នីមួយៗរួចរាល់។»*
 
 ---
 
@@ -29,10 +31,12 @@ Below are the speaking scripts for code walkthroughs, split into Professional an
 ### 🔥 Natural/Casual Version (Slay!)
 > "If we **hop over** to DatabaseConnection.java, line 45, **you can see** I **ditched the manual close block**. This should **kill the NullPointerException** that showed up in the logs."
 
-* **Key Vocabulary:**
-  - *hop over to:* ផ្លាស់ទីភ្នែកទៅមើល (instead of *look at*)
-  - *ditched:* បោះបង់ចោល/ជំនួស (instead of *replaced/removed*)
-  - *kill:* កម្ចាត់/ដោះស្រាយ (instead of *prevent/resolve*)
+* **🗣️ Spoken & Linking Guide (គន្លឹះភ្ជាប់សំឡេង):**
+  - **hop over** -> និយាយភ្ជាប់គ្នាថា **"ho-pover"** (/hɒp-əʊ.və/)
+  - **showed up** -> និយាយភ្ជាប់គ្នាថា **"show-dup"** (/ʃəʊd-ʌp/)
+  - **in the** -> និយាយលឿនៗថា **"in-th'"**
+* **💬 អត្ថន័យជាភាសាខ្មែរ (Khmer Meaning):**
+  - *«ប្រសិនបើយើងលោតទៅមើល DatabaseConnection.java បន្ទាត់ទី ៤៥ អ្នកនឹងឃើញថាខ្ញុំបានដក manual close block ចេញ។ របៀបនេះនឹងកម្ចាត់ចោលនូវ NullPointerException ដែលធ្លាប់បង្ហាញនៅក្នុង log files នោះ។»*
 
 ---
 
@@ -44,10 +48,12 @@ Below are the speaking scripts for code walkthroughs, split into Professional an
 ### 🔥 Natural/Casual Version (Slay!)
 > "I'm **pretty good with how this looks**, but I’d love to **get your eyes on** the config setup on line 120. **Let me know if I missed anything** or if we can make it cleaner."
 
-* **Key Vocabulary:**
-  - *pretty good with...:* មានទំនុកចិត្តលើ (instead of *confident with*)
-  - *get your eyes on:* សុំអ្នកជួយមើល (instead of *get your opinion/look at*)
-  - *make it cleaner:* ធ្វើឱ្យកូដមានរបៀប/ប្រសើរជាងមុន (instead of *optimize*)
+* **🗣️ Spoken & Linking Guide (គន្លឹះភ្ជាប់សំឡេង):**
+  - **get your** -> និយាយភ្ជាប់គ្នាថា **"ge-chur"** (/ɡet-jɔː/)
+  - **eyes on** -> និយាយភ្ជាប់គ្នាថា **"eye-zon"** (/aɪz-ɒn/)
+  - **missed anything** -> និយាយភ្ជាប់គ្នាថា **"miss-dany-thing"** (/mɪst-eni.θɪŋ/)
+* **💬 អត្ថន័យជាភាសាខ្មែរ (Khmer Meaning):**
+  - *«ខ្ញុំគិតថាកូដនេះរៀបចំបានល្អហើយ ប៉ុន្តែខ្ញុំចង់សុំឱ្យអ្នកជួយពិនិត្យមើលការកំណត់រចនាសម្ព័ន្ធនៅបន្ទាត់ទី ១២០ បន្តិច។ ប្រាប់ខ្ញុំផង ប្រសិនបើខ្ញុំភ្លេចចំណុចណាមួយ ឬប្រសិនបើយើងអាចរៀបចំវាឱ្យកាន់តែស្អាតជាងនេះ។»*
 
 ---
 🔗 **[ត្រឡប់ទៅមេរៀនមុន (Back to Module Index)](../README.md)**

@@ -1,8 +1,8 @@
 # Workplace Small Talk (ស្គ្រីបនិយាយលេងនៅកន្លែងធ្វើការ)
 
-ស្គ្រីបសម្រាប់ជជែកលេងក្រៅផ្លូវការជាមួយមិត្តរួមការងារ និងដៃគូសហការ។
+ជំពូកនេះជួយអ្នកក្នុងការជជែកលេងក្រៅផ្លូវការជាមួយមិត្តរួមការងារ និងដៃគូសហការ ដើម្បីបង្កើនទំនាក់ទំនងល្អ។
 
-Workplace small talk scripts in both Professional and Natural/Casual styles.
+Workplace small talk scripts with phonetic linking guides and Khmer translations.
 
 ---
 
@@ -14,10 +14,12 @@ Workplace small talk scripts in both Professional and Natural/Casual styles.
 ### 🔥 Natural/Casual Version (Slay!)
 > "Hey Dara, morning! **How'd your weekend go**? **Do anything fun**? ... Oh, nice! I **mostly just chilled at home** and **caught up on some reading**. **Ready to tackle the week**?"
 
-* **Key Vocabulary:**
-  - *How'd your weekend go?:* តើចុងសប្តាហ៍របស់អ្នកយ៉ាងម៉េចដែរ? (instead of *How was your weekend?*)
-  - *mostly just chilled:* ភាគច្រើនគឺគ្រាន់តែសម្រាកសម្រាលខ្លួន (instead of *personally, I stayed home*)
-  - *Ready to tackle the week?:* រួចរាល់ដើម្បីប្រយុទ្ធនឹងការងារសប្តាហ៍ថ្មីហើយឬនៅ? (instead of *Are you ready for a busy week?*)
+* **🗣️ Spoken & Linking Guide (គន្លឹះភ្ជាប់សំឡេង):**
+  - **how'd your** -> និយាយភ្ជាប់គ្នាថា **"how-jur"** (/haʊd-jɔː/)
+  - **chilled at** -> និយាយភ្ជាប់គ្នាថា **"chil-dat"** (/tʃɪld-æt/)
+  - **caught up on** -> និយាយភ្ជាប់គ្នាថា **"cau-ta-pon"** (/kɔːt-ʌp-ɒn/)
+* **💬 អត្ថន័យជាភាសាខ្មែរ (Khmer Meaning):**
+  - *«ហេ តារា អរុណសួស្តី! ចុងសប្តាហ៍ទៅលេងណាខ្លះដែរ? សប្បាយអត់? ... អូ ល្អតាស! សម្រាប់ខ្ញុំ ភាគច្រើនគ្រាន់តែសម្រាកនៅផ្ទះ និងឆ្លៀតអានសៀវភៅខ្លះ។ រួចរាល់ដើម្បីសម្រុកការងារសប្តាហ៍នេះហើយឬនៅ?»*
 
 ---
 
@@ -29,10 +31,12 @@ Workplace small talk scripts in both Professional and Natural/Casual styles.
 ### 🔥 Natural/Casual Version (Slay!)
 > "Hey, **getting some coffee**? I was **planning to hit up** that new coffee spot across the street. **Wanna come along**? I heard their **espresso is solid**."
 
-* **Key Vocabulary:**
-  - *hit up:* ទៅលេង/ទៅសាកល្បង (instead of *try*)
-  - *wanna come along?:* ចង់ទៅជាមួយគ្នាទេ? (instead of *would you like to join me?*)
-  - *solid:* ល្អ/ឆ្ងាញ់/មានគុណភាព (instead of *quite good*)
+* **🗣️ Spoken & Linking Guide (គន្លឹះភ្ជាប់សំឡេង):**
+  - **getting some** -> និយាយលឿនៗថា **"get-ting-sum"**
+  - **wanna come** -> និយាយលឿនៗថា **"wan-na-cum"**
+  - **come along** -> និយាយភ្ជាប់គ្នាថា **"co-ma-long"** (/kʌm-əˈlɒŋ/)
+* **💬 អត្ថន័យជាភាសាខ្មែរ (Khmer Meaning):**
+  - *«ហេ កំពុងទៅរកកាហ្វេញ៉ាំមែនទេ? ខ្ញុំកំពុងគិតចង់ទៅសាកហាងកាហ្វេថ្មីនៅម្ខាងផ្លូវនោះ។ ចង់ទៅជាមួយគ្នាទេ? ឮគេថា espresso របស់ពួកគេរសជាតិល្អ/កប់ ណាស់។»*
 
 ---
 
@@ -44,10 +48,12 @@ Workplace small talk scripts in both Professional and Natural/Casual styles.
 ### 🔥 Natural/Casual Version (Slay!)
 > "While we're **waiting for everyone to hop on**, how's the weather on your end? It's **been pouring down** here since this morning."
 
-* **Key Vocabulary:**
-  - *hop on:* ចូលរួមប្រជុំអនឡាញ (instead of *join*)
-  - *pouring down / raining cats and dogs:* ភ្លៀងធ្លាក់ខ្លាំងណាស់ (instead of *raining very heavily*)
-  - *on your end:* នៅខាងទីតាំងរបស់អ្នក (instead of *over there*)
+* **🗣️ Spoken & Linking Guide (គន្លឹះភ្ជាប់សំឡេង):**
+  - **waiting for** -> និយាយលឿនៗថា **"way-ting-fer"**
+  - **on your** -> និយាយភ្ជាប់គ្នាថា **"on-jur"** (/ɒn-jɔː/)
+  - **been pouring** -> និយាយភ្ជាប់គ្នាថា **"been-pou-ring"**
+* **💬 អត្ថន័យជាភាសាខ្មែរ (Khmer Meaning):**
+  - *«កំឡុងពេលកំពុងរង់ចាំអ្នកដទៃចូលរួម តើអាកាសធាតុនៅខាងអ្នកយ៉ាងម៉េចដែរ? នៅទីនេះភ្លៀងធ្លាក់ខ្លាំងណាស់តាំងពីព្រឹកមកម្ល៉េះ។»*
 
 ---
 🔗 **[ត្រឡប់ទៅមេរៀនមុន (Back to Module Index)](../README.md)**

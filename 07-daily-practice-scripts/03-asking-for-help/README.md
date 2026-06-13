@@ -1,8 +1,8 @@
 # Asking for Help & Debugging (ស្គ្រីបសុំជំនួយ និងការដោះស្រាយ Bug)
 
-របៀបសុំជំនួយពីមិត្តរួមក្រុមដោយប្រើប្រាស់ភាសាអាជីព និងបែបធម្មជាតិទាន់សម័យ។
+ជំពូកនេះផ្តល់នូវស្គ្រីបសម្រាប់សុំជំនួយពីមិត្តរួមក្រុមដោយប្រើប្រាស់ភាសាអាជីព និងបែបធម្មជាតិទាន់សម័យ។
 
-How to ask teammates for debugging support in both Professional and Natural/Casual styles.
+Help-request speaking scripts with phonetic linking guides and Khmer translations.
 
 ---
 
@@ -14,10 +14,12 @@ How to ask teammates for debugging support in both Professional and Natural/Casu
 ### 🔥 Natural/Casual Version (Slay!)
 > "Hey Sophea, **got a sec**? I've **hit a weird issue** with the Kubernetes config. **I've been banging my head against the wall** trying to debug it. Could you help me **double-check the files**?"
 
-* **Key Vocabulary:**
-  - *got a sec?:* តើមានពេលបន្តិចទេ? (instead of *do you have a few minutes?*)
-  - *hit a weird issue:* ជួបបញ្ហាប្លែកមួយ (instead of *run into a strange error*)
-  - *banging my head against the wall:* ព្យាយាមដោះស្រាយយូរហើយតែនៅតែមិនចេញ (very common developer idiom!)
+* **🗣️ Spoken & Linking Guide (គន្លឹះភ្ជាប់សំឡេង):**
+  - **got a** -> និយាយភ្ជាប់គ្នាថា **"go-ta"** (/ɡɒt-ə/)
+  - **hit a** -> និយាយភ្ជាប់គ្នាថា **"hi-ta"** (/hɪt-ə/)
+  - **against the** -> និយាយភ្ជាប់គ្នាថា **"agains-th'"**
+* **💬 អត្ថន័យជាភាសាខ្មែរ (Khmer Meaning):**
+  - *«សួស្តីសុភារ មានពេលបន្តិចទេ? ខ្ញុំជួបបញ្ហាប្លែកមួយជាមួយ Kubernetes configuration។ ខ្ញុំបានព្យាយាម debug វាយ៉ាងយូរហើយតែនៅតែមិនចេញសោះ។ តើអ្នកអាចជួយខ្ញុំពិនិត្យមើល files ទាំងនេះឡើងវិញបន្តិចបានទេ?»*
 
 ---
 
@@ -29,10 +31,12 @@ How to ask teammates for debugging support in both Professional and Natural/Casu
 ### 🔥 Natural/Casual Version (Slay!)
 > "I'm **getting hit with** a 500 error on the signup endpoint. I've **already double-checked** the DB credentials and **gone through the logs**, but **nothing seems to work**. Could you **take a quick look** at my mapping?"
 
-* **Key Vocabulary:**
-  - *getting hit with:* ជួបប្រទះ/ទទួលបាន (instead of *keep getting*)
-  - *gone through:* ពិនិត្យមើល/ឆែកមើល (instead of *checked*)
-  - *take a quick look:* ជួយមើលមួយភ្លែត (instead of *help me look at*)
+* **🗣️ Spoken & Linking Guide (គន្លឹះភ្ជាប់សំឡេង):**
+  - **double-checked** -> និយាយភ្ជាប់គ្នាថា **"double-check-t"** (/ˈdʌb.əl-tʃekt/)
+  - **gone through** -> និយាយលឿនៗថា **"gon-throo"**
+  - **take a** -> និយាយភ្ជាប់គ្នាថា **"tey-ka"** (/teɪk-ə/)
+* **💬 អត្ថន័យជាភាសាខ្មែរ (Khmer Meaning):**
+  - *«ខ្ញុំកំពុងជួបបញ្ហា error 500 លើ endpoint ចុះឈ្មោះគណនី។ ខ្ញុំបានផ្ទៀងផ្ទាត់ DB credentials ឡើងវិញ និងបានពិនិត្យមើល logs រួចរាល់ហើយ ប៉ុន្តែគ្រប់យ៉ាងហាក់ដូចជាមិនដំណើរការសោះ។ តើអ្នកអាចជួយពិនិត្យមើល mapping របស់ខ្ញុំបន្តិចបានទេ?»*
 
 ---
 
@@ -44,10 +48,12 @@ How to ask teammates for debugging support in both Professional and Natural/Casu
 ### 🔥 Natural/Casual Version (Slay!)
 > "Hey, I'm **struggling a bit** with the Docker setup on my local machine. If you're **free later**, could we **jump on a quick call** to **troubleshoot this together**?"
 
-* **Key Vocabulary:**
-  - *struggling a bit:* ពិបាកបន្តិចបន្តួច (instead of *having some trouble*)
-  - *jump on a call:* ជួបគ្នាតាមការប្រជុំអនឡាញ (instead of *do a screen-share session*)
-  - *troubleshoot:* ស្វែងរកនិងដោះស្រាយបញ្ហា (instead of *go through it*)
+* **🗣️ Spoken & Linking Guide (គន្លឹះភ្ជាប់សំឡេង):**
+  - **struggling a** -> និយាយភ្ជាប់គ្នាថា **"strug-gling-a"** (/ˈstrʌɡ.lɪŋ-ə/)
+  - **jump on** -> និយាយភ្ជាប់គ្នាថា **"jum-pon"** (/dʒʌmp-ɒn/)
+  - **free later** -> និយាយលឿនៗថា **"free-lay-ter"**
+* **💬 អត្ថន័យជាភាសាខ្មែរ (Khmer Meaning):**
+  - *«ហេ ខ្ញុំមានការពិបាកបន្តិចបន្តួចជាមួយការដំឡើង Docker លើម៉ាស៊ីនខ្ញុំ។ ប្រសិនបើអ្នកទំនេរពេលក្រោយ តើយើងអាចចូលប្រជុំ/call គ្នាខ្លីមួយ ដើម្បីរកមើលនិងដោះស្រាយវាជាមួយគ្នាបានទេ?»*
 
 ---
 🔗 **[ត្រឡប់ទៅមេរៀនមុន (Back to Module Index)](../README.md)**
