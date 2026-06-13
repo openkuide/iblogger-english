@@ -39,6 +39,7 @@ Welcome to the complete English learning path. Below is the structured roadmap d
   - [01. Context Clues, Prefixes, & Suffixes (ការស្វែងយល់ពាក្យតាមបរិបទ និងបុព្វបទ-បច្ច័យបទ)](04-reading-vocabulary/01-context-clues/README.md)
   - [02. Skimming & Scanning Strategies (យុទ្ធសាស្ត្រអានបែបឆាប់រហ័ស)](04-reading-vocabulary/02-reading-strategies/README.md)
   - [03. Reading Technical Documentation (ការអានឯកសារបច្ចេកទេស)](04-reading-vocabulary/03-technical-documentation/README.md)
+  - [04. Common IT Vocabulary (កម្រងវាក្យសព្ទព័ត៌មានវិទ្យាទូទៅ)](04-reading-vocabulary/04-common-it-vocabulary/README.md)
 
 ### 📂 [Module 5: Writing & Composition (ជំនាញសរសេរ និងតែងសេចក្តី)](05-writing-composition/README.md)
 *សិក្សាពីការសរសេរប្រយោគ កថាខណ្ឌ អត្ថបទ Essay និងការសរសេរអ៊ីមែលទំនាក់ទំនងការងារ។*

@@ -11,6 +11,7 @@ Learn techniques for speed reading, vocabulary expansion through context clues, 
 * 📁 **[ជំពូកទី 01 — Context Clues, Prefixes & Suffixes (ការយល់ពាក្យតាមបរិបទ និងបុព្វបទ-បច្ច័យបទ)](01-context-clues/README.md)** (~ 2 hours)
 * 📁 **[ជំពូកទី 02 — Reading Strategies: Skimming & Scanning (យុទ្ធសាស្ត្រអានបែបឆាប់រហ័ស)](02-reading-strategies/README.md)** (~ 2 hours)
 * 📁 **[ជំពូកទី 03 — Reading Technical Documentation (ការអានឯកសារបច្ចេកទេស)](03-technical-documentation/README.md)** (~ 3 hours)
+* 📁 **[ជំពូកទី 04 — Common IT Vocabulary (កម្រងវាក្យសព្ទព័ត៌មានវិទ្យាទូទៅ)](04-common-it-vocabulary/README.md)** (~ 4 hours)
 
 ---
 🔗 **[ត្រឡប់ទៅមាតិកាដើម (Back to Root Index)](../README.md)**
