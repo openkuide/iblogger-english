@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Learning Path for Developers (មគ្គុទេសក៍រៀនភាសាអង់គ្លេស)</title>
+  
+  <!-- Premium Style Sheets -->
+  <link rel="stylesheet" href="app.css">
+  
+  <!-- CDN Dependencies -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  
+  <!-- Initialize Mermaid configuration -->
+  <script>
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: 'dark',
+      securityLevel: 'loose'
+    });
+  </script>
+</head>
+<body>
+
+  <div id="app" v-cloak>
+    <div class="app-container">
+      
+      <!-- Left Navigation Sidebar -->
+      <aside :class="['sidebar', { closed: !isSidebarOpen, 'mobile-open': isMobileMenuOpen }]">
+        <div class="sidebar-header">
+          <a href="#" class="brand">
+            <svg class="brand-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="100" height="100" rx="20" fill="#3b82f6"/>
+              <path d="M30 30H70V42H48V50H68V62H48V70H30V30Z" fill="white"/>
+            </svg>
+            <span class="brand-name">openkuide</span>
+          </a>
+          <button @click="toggleSidebar" class="toggle-btn desktop-only" title="Collapse Sidebar">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+            </svg>
+          </button>
+        </div>
+        
+        <nav class="sidebar-content">
+          <!-- Sidebar Module list -->
+          <div v-for="(mod, modIndex) in sidebarModules" :key="modIndex" class="module-group">
+            <div class="module-header">
+              <span>{{ mod.title }}</span>
+            </div>
+            
+            <ul class="lesson-list">
+              <!-- Module Index link -->
+              <li class="lesson-item">
+                <a :href="'#/' + mod.path" 
+                   :class="['lesson-link', { active: currentPath === mod.path }]"
+                   @click="isMobileMenuOpen = false">
+                   📖 Index
+                </a>
+              </li>
+              
+              <!-- Module Lessons links -->
+              <li v-for="(lesson, lesIndex) in mod.lessons" :key="lesIndex" class="lesson-item">
+                <a :href="'#/' + lesson.path" 
+                   :class="['lesson-link', { active: currentPath === lesson.path }]">
+                   📄 {{ lesson.title }}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Main Contents wrapper -->
+      <div :class="['main-wrapper', { 'sidebar-closed': !isSidebarOpen }]">
+        
+        <!-- Navigation Header bar -->
+        <header class="top-nav">
+          <button @click="toggleSidebar" class="toggle-btn" title="Toggle Navigation Menu">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+          
+          <div class="top-nav-meta">
+            <small style="color: var(--text-muted)">Active Document Path:</small>
+            <span style="font-size: 0.85rem; font-family: monospace; color: var(--accent-secondary); margin-left: 0.5rem;">
+              {{ currentPath }}
+            </span>
+          </div>
+        </header>
+
+        <!-- Dynamic Page Content -->
+        <main class="content-container">
+          <div v-if="isLoading" class="loader-wrapper">
+            <div class="spinner"></div>
+          </div>
+          
+          <article v-else class="markdown-body" v-html="renderedHtml"></article>
+        </main>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Load ES Module App script -->
+  <script type="module" src="app.js"></script>
+
+</body>
+</html>

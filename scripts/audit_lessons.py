@@ -239,7 +239,8 @@ def main():
     else:
         # Recursively find all markdown files
         for root, dirs, files in os.walk(root_dir):
-            dirs[:] = [d for d in dirs if not d.startswith('.')]
+            # Skip hidden directories and node_modules
+            dirs[:] = [d for d in dirs if not d.startswith('.') and d != 'node_modules']
             for file in files:
                 if file.endswith(".md"):
                     files_to_audit.append(os.path.join(root, file))
