@@ -1,0 +1,5 @@
+{
+  "autoApprove": [
+    "python3 scripts/audit_lessons.py"
+  ]
+}

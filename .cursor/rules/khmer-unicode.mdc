@@ -1,0 +1,17 @@
+---
+description: "Rules for Khmer Unicode character typing order and ZWSP spacing in Markdown"
+globs: ["**/*.md"]
+alwaysApply: true
+---
+# Khmer Unicode & Spacing Standards
+
+Follow these rules when writing or modifying Khmer text to prevent rendering bugs across different browsers:
+
+* **Typing Sequence**: Always type characters in this exact order:
+  1. Consonant (or Independent Vowel)
+  2. Subscript (`្` + Subscript Consonant)
+  3. Dependent Vowel (e.g. `ា`, `ិ`, `ី`, `ុ`, `ូ`, `ោ`, `ៅ`)
+  4. Diacritic / Accent (e.g. `ំ`, `ៈ`, `័`, `៍`, `៌`, `៏`, `័`)
+* **Register Shifters Exception**: Note that register shifters `៉` (muisikatoan) and `៊` (triisap) are typed *before* the dependent vowels because they shift the register of the consonant itself (e.g., `ម៉` = `ម` + `៉` + `ា`).
+* **Zero-Width Space (ZWSP / `\u200B`)**: Use ZWSP between word boundaries inside a single clause or sentence to allow correct line-wrapping.
+* **Standard Space**: Use regular spaces ONLY between clauses, sentences, or list items. Never place regular spaces between adjacent words inside a single clause.

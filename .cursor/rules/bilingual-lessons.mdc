@@ -1,0 +1,15 @@
+---
+description: "Rules for bilingual lesson layout, H1 title formats, and active recall practice sections"
+globs: ["**/*.md"]
+alwaysApply: true
+---
+# Bilingual Lesson Standards
+
+Ensure all markdown lesson files adhere to these pedagogical structures:
+
+* **Socratic Bilingual H1**: The H1 title of a lesson must follow the format `English Title (Khmer Translation in Parentheses)`.
+* **Bilingual Symmetry**: Every section, paragraph, and description block in Khmer must be paired block-by-block with its English equivalent. Avoid disproportionate text lengths between the two languages.
+* **Active Retrieval Practice**: Every lesson must end with a `### 🧠 ការអនុវត្ត និងការឆ្លុះបញ្ចាំង (Practice & Reflection)` section containing active recall exercises (e.g., prompt exercises, translation, error correction).
+* **Table of Contents (TOC)**: Include a clickable TOC linking to explicit numbered HTML anchors `<a id="N"></a>` (where N is a sequential number starting from 0).
+* **Index Backlinks**: All sub-lessons must end with a navigation backlink pointing to the parent README index: `🔗 **[ត្រឡប់ទៅមេរៀនមុន (Back to Module Index)](../README.md)**`.
+* **Cognitive Scaffolding**: Limit each file to at most 3 grammar rules or 10 technical terms to prevent working memory overload.

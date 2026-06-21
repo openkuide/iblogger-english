@@ -1,0 +1,32 @@
+---
+description: "Rules for contrast-safe Mermaid diagrams, dark-mode overrides, and text-wrapping"
+globs: ["**/*.md"]
+alwaysApply: true
+---
+# Mermaid Diagram Standards
+
+Follow these rules when writing or modifying Mermaid diagrams:
+
+* **Dark-Mode CSS Overrides**: Always begin Mermaid code blocks with this contrast-safe initialization header:
+  ```mermaid
+  %%{init: {
+    'theme': 'dark',
+    'themeVariables': {
+      'background': '#1e1e1e',
+      'primaryTextColor': '#ffffff',
+      'lineColor': '#a0a0a0',
+      'actorBkg': '#2c3e50',
+      'actorBorder': '#34495e',
+      'actorTextColor': '#ffffff',
+      'noteBkgColor': '#2c3e50',
+      'noteTextColor': '#ffffff',
+      'noteBorderColor': '#34495e'
+    },
+    'themeCSS': 'svg { background-color: #1e1e1e !important; padding: 1rem !important; border-radius: 8px !important; } .edgeLabel rect { fill: #1e1e1e !important; } text, tspan { fill: #ffffff !important; } .messageText, .messageText tspan, .signalText, .signalText tspan { fill: #ffffff !important; stroke: #1e1e1e !important; stroke-width: 3px !important; paint-order: stroke fill !important; stroke-linejoin: round !important; }'
+  }}%%
+  ```
+* **Text Wrapping**: Wrap node labels using `<br/>` every 2-3 words. Keep individual label lines under 25 characters to prevent diagram overflows.
+* **Semantic Colors**: Apply standard style classes to nodes:
+  * Failure / Trap / Error (Red): `style nodeID fill:#e74c3c,color:#fff`
+  * Success / Solution / Correct Path (Green): `style nodeID fill:#27ae60,color:#fff`
+  * Standard Concept / Process (Blue): `style nodeID fill:#2980b9,color:#fff`
