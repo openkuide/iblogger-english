@@ -1,37 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@300;400;500;700&family=Kantumruy+Pro:wght@300;400;500;600;700&family=Noto+Serif+Khmer:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
-/* CSS Variables for Premium Ocular-Safe Light Theme */
+/* CSS Variables — Warm Scholar Theme (Claude-inspired) */
 :root {
-  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-khmer: 'Noto Sans Khmer', sans-serif;
-  
-  /* Premium Slate-Stone Ocular Comfort Colors */
-  --bg-primary: #f8fafc;
-  --bg-secondary: #ffffff;
-  --bg-sidebar: rgba(255, 255, 255, 0.85);
-  --bg-hover: rgba(15, 23, 42, 0.04);
-  --border-color: rgba(15, 23, 42, 0.08);
-  
-  /* Text Contrast - Highly Readable slate/gray tones */
-  --text-primary: #0f172a;
-  --text-secondary: #334155;
-  --text-khmer: #1e293b; /* Dark slate for high contrast Khmer run readability */
-  --text-muted: #64748b;
-  
-  /* Glow/Accent Gradients */
-  --accent-primary: #2563eb;
-  --accent-secondary: #7c3aed;
-  --accent-glow: rgba(37, 99, 235, 0.06);
-  
-  --success: #059669;
-  --warning: #d97706;
-  --danger: #dc2626;
-  
-  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --sidebar-width: 320px;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-khmer: 'Kantumruy Pro', 'Noto Sans Khmer', sans-serif;
+  --font-khmer-display: 'Noto Serif Khmer', 'Kantumruy Pro', serif;
+
+  /* Claude-inspired warm neutral palette */
+  --bg-primary: #FAFAF8;
+  --bg-secondary: #FFFFFF;
+  --bg-sidebar: #F5F3EE;
+  --bg-hover: rgba(41, 37, 36, 0.05);
+  --border-color: rgba(41, 37, 36, 0.10);
+
+  /* Warm text palette */
+  --text-primary: #1C1917;
+  --text-secondary: #44403C;
+  --text-khmer: #292524;
+  --text-muted: #78716C;
+
+  /* Terracotta accent — warm, Claude-inspired */
+  --accent-primary: #C2714F;
+  --accent-secondary: #92400E;
+  --accent-glow: rgba(194, 113, 79, 0.08);
+
+  --success: #166534;
+  --warning: #92400E;
+  --danger: #991B1B;
+
+  --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --sidebar-width: 300px;
 }
 
-/* Reset & Base Styles */
+/* Reset & Base */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -42,24 +45,23 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font-family: var(--font-sans);
-  line-height: 1.6;
+  line-height: 1.65;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Layout Container */
+/* Layout */
 .app-container {
   display: flex;
   min-height: 100vh;
   position: relative;
 }
 
-/* Glassmorphic Sidebar Navigation */
+/* Sidebar — warm parchment */
 .sidebar {
   width: var(--sidebar-width);
   background-color: var(--bg-sidebar);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
   border-right: 1px solid var(--border-color);
   position: fixed;
   top: 0;
@@ -76,7 +78,7 @@ body {
 }
 
 .sidebar-header {
-  padding: 1.5rem;
+  padding: 1.375rem 1.25rem;
   border-bottom: 1px solid var(--border-color);
   display: flex;
   align-items: center;
@@ -86,59 +88,55 @@ body {
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.625rem;
   text-decoration: none;
   color: var(--text-primary);
 }
 
 .brand-logo {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  filter: drop-shadow(0 2px 8px rgba(37, 99, 235, 0.15));
+  width: 34px;
+  height: 34px;
+  border-radius: 7px;
   object-fit: cover;
-  border: 1px solid rgba(15, 23, 42, 0.08);
+  border: 1px solid var(--border-color);
 }
 
 .brand-name {
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: -0.75px;
-  background: linear-gradient(to right, #2563eb, #7c3aed);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  font-style: italic;
 }
 
 .sidebar-content {
   flex: 1;
   overflow-y: auto;
-  padding: 1.5rem 1rem;
+  padding: 1.25rem 0.875rem;
 }
 
 .sidebar-content::-webkit-scrollbar {
-  width: 4px;
+  width: 3px;
 }
 .sidebar-content::-webkit-scrollbar-thumb {
   background: var(--border-color);
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
-/* Sidebar Menu Navigation List */
+/* Module navigation */
 .module-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .module-header {
-  font-size: 0.75rem;
-  font-weight: 700;
+  font-size: 0.6875rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.08em;
   color: var(--text-muted);
-  margin-bottom: 0.5rem;
-  padding-left: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-bottom: 0.375rem;
+  padding: 0 0.5rem;
 }
 
 .lesson-list {
@@ -146,56 +144,51 @@ body {
 }
 
 .lesson-item {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.125rem;
 }
 
 .lesson-link {
   display: flex;
   align-items: center;
-  padding: 0.65rem 0.75rem;
-  border-radius: 6px;
+  padding: 0.5rem 0.625rem;
+  border-radius: 5px;
   color: var(--text-secondary);
   text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 0.875rem;
+  font-weight: 400;
   transition: var(--transition-smooth);
   border: 1px solid transparent;
+  line-height: 1.4;
 }
 
 .lesson-link:hover {
   background-color: var(--bg-hover);
   color: var(--text-primary);
-  transform: translateX(3px);
 }
 
 .lesson-link.active {
   background-color: var(--accent-glow);
   color: var(--text-primary);
-  border-left: 3px solid var(--accent-primary);
-  border-color: rgba(59, 130, 246, 0.2) rgba(59, 130, 246, 0.2) rgba(59, 130, 246, 0.2) var(--accent-primary);
-  font-weight: 600;
-  box-shadow: inset 0 0 12px rgba(59, 130, 246, 0.08);
+  border-color: rgba(194, 113, 79, 0.18);
+  border-left: 2.5px solid var(--accent-primary);
+  font-weight: 500;
 }
 
 .nav-icon {
-  margin-right: 0.65rem;
+  margin-right: 0.5rem;
   flex-shrink: 0;
-  opacity: 0.65;
+  opacity: 0.5;
   transition: var(--transition-smooth);
   color: var(--text-muted);
 }
 
-.lesson-link:hover .nav-icon {
-  opacity: 1;
-  color: var(--accent-secondary);
-}
-
+.lesson-link:hover .nav-icon,
 .lesson-link.active .nav-icon {
-  opacity: 1;
+  opacity: 0.85;
   color: var(--accent-primary);
 }
 
-/* Main Content Area */
+/* Main content area */
 .main-wrapper {
   flex: 1;
   margin-left: var(--sidebar-width);
@@ -207,32 +200,30 @@ body {
   margin-left: 0;
 }
 
-/* Scroll Progress indicator (glowing, fixed at top) */
+/* Scroll progress — warm amber */
 .scroll-progress-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 3px;
+  height: 2px;
   z-index: 200;
   pointer-events: none;
-  background-color: transparent;
 }
 
 .scroll-progress-bar {
   height: 100%;
-  background: linear-gradient(to right, #3b82f6, #a855f7);
-  box-shadow: 0 0 8px #a855f7;
+  background: linear-gradient(to right, var(--accent-primary), #E8956A);
   width: 0;
   transition: width 0.1s ease-out;
 }
 
-/* Premium Top Header bar */
+/* Top nav header */
 .top-nav {
-  height: 64px;
-  background-color: rgba(248, 250, 252, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  height: 56px;
+  background-color: rgba(250, 250, 248, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-color);
   display: flex;
   align-items: center;
@@ -246,10 +237,10 @@ body {
 .toggle-btn {
   background: none;
   border: none;
-  color: var(--text-primary);
+  color: var(--text-muted);
   cursor: pointer;
-  padding: 0.5rem;
-  border-radius: 6px;
+  padding: 0.375rem;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -258,216 +249,268 @@ body {
 
 .toggle-btn:hover {
   background-color: var(--bg-hover);
+  color: var(--text-primary);
 }
 
-/* Lesson Metadata Card (Glassmorphic) */
+/* Lesson metadata breadcrumb */
 .lesson-meta-card {
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 1rem 1.5rem;
-  margin-bottom: 2rem;
+  border-radius: 8px;
+  padding: 0.875rem 1.25rem;
+  margin-bottom: 2.5rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+  gap: 1.75rem;
+  box-shadow: 0 1px 3px rgba(41, 37, 36, 0.04);
 }
 
 .meta-item {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.2rem;
 }
 
 .meta-label {
-  font-size: 0.7rem;
-  font-weight: 700;
+  font-size: 0.6875rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.07em;
   color: var(--text-muted);
 }
 
 .meta-value {
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.8125rem;
+  font-weight: 500;
   color: var(--text-secondary);
 }
 
-/* Markdown Reading Container (Line Length Constraint) */
+/* Content reading area */
 .content-container {
-  max-width: 760px; /* 720px content area + 40px horizontal padding */
+  max-width: 740px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 2.75rem 1.75rem 4rem;
 }
 
-/* Styled Markdown Core Elements */
+/* Markdown core */
 .markdown-body {
-  font-size: 1.05rem;
-  color: var(--text-primary);
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
 }
 
-/* Khmer Text Styling Overrides (Ocular Comfort) */
+/* Khmer typography — Kantumruy Pro for body, Noto Serif Khmer for headings */
 .kh {
   font-family: var(--font-khmer);
-  font-size: 0.95em;
-  line-height: 1.85 !important;
+  font-size: 1em;
+  line-height: 1.95 !important;
   color: var(--text-khmer);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* Khmer in headings inherits the serif display font */
+h1 .kh, h2 .kh, h3 .kh {
+  font-family: var(--font-khmer-display);
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.6 !important;
+}
+
+/* Khmer in blockquotes */
+blockquote .kh {
+  font-family: var(--font-khmer-display);
   font-weight: 400;
 }
 
-/* Premium Heading Gradient Styling */
+/* Headings — literary book treatment */
 .markdown-body h1 {
-  font-size: 2.2rem;
+  font-family: var(--font-serif);
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 1.3;
+  font-style: italic;
+  line-height: 1.25;
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
+  padding-bottom: 0.875rem;
   border-bottom: 1px solid var(--border-color);
-  padding-bottom: 0.75rem;
-  letter-spacing: -0.75px;
-  background: linear-gradient(to right, #1e3a8a, #5b21b6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.3px;
 }
 
+/* Signature element: chapter annotation left-bar on H2 */
 .markdown-body h2 {
-  font-size: 1.6rem;
+  font-family: var(--font-serif);
+  font-size: 1.4375rem;
   font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0.3rem;
-  border-bottom: 1px solid var(--border-color);
-  background: linear-gradient(to right, #0f172a, #334155);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--text-primary);
+  margin-top: 2.5rem;
+  margin-bottom: 0.875rem;
+  padding-left: 0.875rem;
+  border-left: 3px solid var(--accent-primary);
+  line-height: 1.3;
+  letter-spacing: -0.2px;
 }
 
 .markdown-body h3 {
-  font-size: 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
   font-weight: 600;
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.625rem;
   color: var(--accent-secondary);
+  letter-spacing: -0.1px;
+}
+
+.markdown-body h4 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8125rem;
 }
 
 .markdown-body p {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.25rem;
   color: var(--text-secondary);
 }
 
+.markdown-body a {
+  color: var(--accent-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(194, 113, 79, 0.35);
+  transition: var(--transition-smooth);
+}
+
+.markdown-body a:hover {
+  color: var(--accent-secondary);
+  text-decoration-color: var(--accent-secondary);
+}
+
+/* Blockquotes — book annotation style */
 .markdown-body blockquote {
-  padding: 1rem;
+  margin: 1.5rem 0;
+  padding: 0.875rem 1.25rem;
+  border-left: 3px solid var(--accent-primary);
+  background-color: rgba(194, 113, 79, 0.04);
+  border-radius: 0 6px 6px 0;
   color: var(--text-secondary);
-  border-left: 4px solid var(--accent-primary);
-  margin-bottom: 1.5rem;
-  background-color: rgba(37, 99, 235, 0.03);
-  border-radius: 0 8px 8px 0;
-  border: 1px solid var(--border-color);
-  border-left-width: 4px;
 }
 
-.markdown-body ul, .markdown-body ol {
-  margin-bottom: 1.5rem;
+.markdown-body blockquote p {
+  margin-bottom: 0;
+  font-style: italic;
+  font-family: var(--font-serif);
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  margin-bottom: 1.25rem;
   padding-left: 1.5rem;
 }
 
 .markdown-body li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.375rem;
   color: var(--text-secondary);
 }
 
-/* Premium Table Styles for vocabulary Lists */
+/* Tables */
 .markdown-body table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 2rem;
   background-color: var(--bg-secondary);
-  border-radius: 8px;
+  border-radius: 7px;
   overflow: hidden;
   border: 1px solid var(--border-color);
+  font-size: 0.9rem;
 }
 
 .markdown-body th {
-  background-color: rgba(15, 23, 42, 0.02);
-  padding: 1rem;
+  background-color: rgba(41, 37, 36, 0.025);
+  padding: 0.75rem 1rem;
   font-weight: 600;
   text-align: left;
-  font-size: 0.9rem;
+  font-size: 0.8125rem;
   border-bottom: 1px solid var(--border-color);
   color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .markdown-body td {
-  padding: 1rem;
-  font-size: 0.95rem;
-  border-bottom: 1px solid rgba(15, 23, 42, 0.03);
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(41, 37, 36, 0.04);
   color: var(--text-secondary);
 }
 
 .markdown-body tr:hover {
-  background-color: rgba(15, 23, 42, 0.01);
+  background-color: rgba(41, 37, 36, 0.015);
 }
 
 .markdown-body tr:last-child td {
   border-bottom: none;
 }
 
-/* Code Highlights styling */
+/* Code blocks — warm dark */
 .markdown-body pre {
-  background-color: #0b0f19 !important;
-  border: 1px solid rgba(15, 23, 42, 0.08);
-  padding: 1.25rem;
-  border-radius: 8px;
+  background-color: #1C1512 !important;
+  border: 1px solid rgba(41, 37, 36, 0.15);
+  padding: 1.125rem 1.25rem;
+  border-radius: 7px;
   overflow-x: auto;
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(28, 21, 18, 0.08);
 }
 
 .markdown-body code {
-  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.85em;
-  background-color: rgba(124, 58, 237, 0.08);
-  padding: 0.2rem 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.84em;
+  background-color: rgba(194, 113, 79, 0.09);
+  padding: 0.15rem 0.375rem;
   border-radius: 4px;
-  color: var(--accent-secondary);
+  color: var(--accent-primary);
+  border: 1px solid rgba(194, 113, 79, 0.15);
 }
 
 .markdown-body pre code {
   padding: 0;
   background-color: transparent;
-  color: inherit;
-  font-size: 0.9rem;
+  border: none;
+  color: #E8D5C4;
+  font-size: 0.875rem;
+  line-height: 1.65;
 }
 
-/* GitHub Alert banners styling */
+/* GitHub Alert banners */
 .markdown-body .markdown-alert {
-  padding: 1rem 1.25rem;
-  border-left: 4px solid;
+  padding: 0.875rem 1.125rem;
+  border-left: 3px solid;
   border-radius: 6px;
   margin-bottom: 1.5rem;
-  background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
-  border-left-width: 4px;
+  border-left-width: 3px;
 }
 
 .markdown-body .markdown-alert-note {
-  border-color: var(--accent-primary);
-  background-color: rgba(37, 99, 235, 0.02);
-  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.04);
+  border-left-color: var(--accent-primary);
+  background-color: rgba(194, 113, 79, 0.04);
 }
 
 .markdown-body .markdown-alert-warning {
-  border-color: var(--warning);
-  background-color: rgba(217, 119, 6, 0.02);
-  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.04);
+  border-left-color: var(--warning);
+  background-color: rgba(146, 64, 14, 0.04);
 }
 
 .markdown-body .markdown-alert-tip {
-  border-color: var(--success);
-  background-color: rgba(5, 150, 105, 0.02);
-  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.04);
+  border-left-color: var(--success);
+  background-color: rgba(22, 101, 52, 0.04);
 }
 
-/* Horizontal line rules styling */
+/* Horizontal rules */
 .markdown-body hr {
   height: 1px;
   border: none;
@@ -475,42 +518,46 @@ body {
   margin: 2.5rem 0;
 }
 
-/* Spinner for Loading State */
+/* Loading state */
 .loader-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .spinner {
-  width: 40px;
-  height: 40px;
-  border: 3px solid rgba(15, 23, 42, 0.08);
+  width: 32px;
+  height: 32px;
+  border: 2.5px solid var(--border-color);
   border-radius: 50%;
   border-top-color: var(--accent-primary);
-  animation: spin 1s linear infinite;
+  animation: spin 0.9s linear infinite;
 }
 
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
 
-/* Responsive Styles */
+/* Responsive */
 @media (max-width: 968px) {
   .sidebar {
     transform: translateX(-100%);
   }
-  
+
   .sidebar.mobile-open {
     transform: translateX(0);
   }
-  
+
   .main-wrapper {
     margin-left: 0 !important;
   }
-  
+
   .top-nav {
     padding: 0 1rem;
+  }
+
+  .content-container {
+    padding: 2rem 1.25rem 3rem;
   }
 }
