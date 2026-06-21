@@ -18,8 +18,9 @@
   --text-khmer: #cbd5e1; /* Soft slate-gray for dense Khmer character runs */
   --text-muted: #64748b;
   
+  /* Glow/Accent Gradients */
   --accent-primary: #3b82f6;
-  --accent-secondary: #60a5fa;
+  --accent-secondary: #a855f7;
   --accent-glow: rgba(59, 130, 246, 0.15);
   
   --success: #10b981;
@@ -57,8 +58,8 @@ body {
 .sidebar {
   width: var(--sidebar-width);
   background-color: var(--bg-sidebar);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   border-right: 1px solid var(--border-color);
   position: fixed;
   top: 0;
@@ -91,15 +92,19 @@ body {
 }
 
 .brand-logo {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  filter: drop-shadow(0 0 8px rgba(96, 165, 250, 0.4));
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .brand-name {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  letter-spacing: -0.5px;
-  background: linear-gradient(to right, #ffffff, var(--text-secondary));
+  letter-spacing: -0.75px;
+  background: linear-gradient(to right, #60a5fa, #a855f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -160,15 +165,16 @@ body {
 .lesson-link:hover {
   background-color: var(--bg-hover);
   color: var(--text-primary);
-  transform: translateX(2px);
+  transform: translateX(3px);
 }
 
 .lesson-link.active {
   background-color: var(--accent-glow);
-  color: var(--accent-secondary);
-  border-color: rgba(59, 130, 246, 0.2);
+  color: var(--text-primary);
+  border-left: 3px solid var(--accent-primary);
+  border-color: rgba(59, 130, 246, 0.2) rgba(59, 130, 246, 0.2) rgba(59, 130, 246, 0.2) var(--accent-primary);
   font-weight: 600;
-  box-shadow: inset 0 0 8px rgba(59, 130, 246, 0.05);
+  box-shadow: inset 0 0 12px rgba(59, 130, 246, 0.08);
 }
 
 /* Main Content Area */
@@ -197,8 +203,8 @@ body {
 
 .scroll-progress-bar {
   height: 100%;
-  background: linear-gradient(to right, var(--accent-primary), var(--accent-secondary));
-  box-shadow: 0 0 8px var(--accent-secondary);
+  background: linear-gradient(to right, #3b82f6, #a855f7);
+  box-shadow: 0 0 8px #a855f7;
   width: 0;
   transition: width 0.1s ease-out;
 }
@@ -236,6 +242,40 @@ body {
   background-color: var(--bg-hover);
 }
 
+/* Lesson Metadata Card (Glassmorphic) */
+.lesson-meta-card {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.meta-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+}
+
+.meta-value {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
 /* Markdown Reading Container (Line Length Constraint) */
 .content-container {
   max-width: 760px; /* 720px content area + 40px horizontal padding */
@@ -258,30 +298,38 @@ body {
   font-weight: 400;
 }
 
+/* Premium Heading Gradient Styling */
 .markdown-body h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 1.5rem;
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 0.75rem;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.75px;
+  background: linear-gradient(to right, #60a5fa, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .markdown-body h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
   margin-top: 2rem;
   margin-bottom: 1rem;
   padding-bottom: 0.3rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(to right, #f8fafc, #cbd5e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .markdown-body h3 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 600;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
+  color: #a78bfa;
 }
 
 .markdown-body p {
@@ -297,6 +345,8 @@ body {
   background-color: var(--bg-secondary);
   padding: 1rem;
   border-radius: 0 8px 8px 0;
+  border: 1px solid var(--border-color);
+  border-left-width: 4px;
 }
 
 .markdown-body ul, .markdown-body ol {
@@ -327,6 +377,7 @@ body {
   text-align: left;
   font-size: 0.9rem;
   border-bottom: 1px solid var(--border-color);
+  color: #818cf8;
 }
 
 .markdown-body td {
@@ -377,18 +428,23 @@ body {
   border-radius: 6px;
   margin-bottom: 1.5rem;
   background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-left-width: 4px;
 }
 
 .markdown-body .markdown-alert-note {
   border-color: var(--accent-primary);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.03);
 }
 
 .markdown-body .markdown-alert-warning {
   border-color: var(--warning);
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.03);
 }
 
 .markdown-body .markdown-alert-tip {
   border-color: var(--success);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.03);
 }
 
 /* Horizontal line rules styling */
