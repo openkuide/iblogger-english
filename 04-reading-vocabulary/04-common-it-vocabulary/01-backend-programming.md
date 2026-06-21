@@ -110,4 +110,13 @@ A list of 100 essential vocabulary words for Backend development, OOP, algorithm
 | 100| **boilerplate** | Noun | កូដដដែលៗដែលចាំបាច់ត្រូវសរសេរ | Lombok annotation helps remove boilerplate code. |
 
 ---
+
+---
+
+### 🧠 ការអនុវត្ត និងការឆ្លុះបញ្ចាំង (Practice & Reflection)
+
+1. **Active Retrieval (ការរំលឹកឡើងវិញ)**: Select 5 key terms from the list above that you commonly encounter in your work. Write down their meanings in your own words.
+2. **Contextual Writing (ការសរសេរតាមបរិបទ)**: Write a brief paragraph (3-5 sentences) in English describing your current software development project, integrating at least 3 vocabulary words from this chapter.
+3. **Reflective Discussion (ការឆ្លុះបញ្ចាំង)**: Why is using precise, standardized technical English terminology important when communicating with cross-border team members or writing documentation? How does it affect cognitive clarity in a distributed team?
+
 🔗 **[ត្រឡប់ទៅមេរៀនមុន (Back to Module Index)](../README.md)**

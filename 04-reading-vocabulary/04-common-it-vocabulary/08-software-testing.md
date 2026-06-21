@@ -1,5 +1,4 @@
-# 🧪 Chapter 08: Software Testing & QA Vocabulary
-> **ជំពូក ០៨: វាក្យសព្ទ Software Testing និង QA**
+# Software Testing & QA Vocabulary (វាក្យសព្ទ Software Testing & QA)
 
 100 essential words for Testing, Quality Assurance, and Bug tracking discussions in IT teams.
 
@@ -146,3 +145,15 @@
 ---
 
 *Words 701–800 | Module 04 > Chapter 08*
+
+---
+
+---
+
+### 🧠 ការអនុវត្ត និងការឆ្លុះបញ្ចាំង (Practice & Reflection)
+
+1. **Active Retrieval (ការរំលឹកឡើងវិញ)**: Select 5 key terms from the list above that you commonly encounter in your work. Write down their meanings in your own words.
+2. **Contextual Writing (ការសរសេរតាមបរិបទ)**: Write a brief paragraph (3-5 sentences) in English describing your current software development project, integrating at least 3 vocabulary words from this chapter.
+3. **Reflective Discussion (ការឆ្លុះបញ្ចាំង)**: Why is using precise, standardized technical English terminology important when communicating with cross-border team members or writing documentation? How does it affect cognitive clarity in a distributed team?
+
+🔗 **[ត្រឡប់ទៅមេរៀនមុន (Back to Module Index)](../README.md)**

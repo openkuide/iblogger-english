@@ -1,5 +1,4 @@
-# ☁️ Chapter 07: Cloud & Cybersecurity Vocabulary
-> **ជំពូក ០៧: វាក្យសព្ទ Cloud និង Cybersecurity**
+# Cloud & Cybersecurity Vocabulary (វាក្យសព្ទ Cloud & Cybersecurity)
 
 100 essential words for Cloud Computing, Infrastructure, and Security discussions in IT teams.
 
@@ -146,3 +145,14 @@
 ---
 
 *Words 601–700 | Module 04 > Chapter 07*
+
+---
+
+### 🧠 ការអនុវត្ត និងការឆ្លុះបញ្ចាំង (Practice & Reflection)
+
+1. **Active Retrieval (ការរំលឹកឡើងវិញ)**: Select 5 key terms from the list above that you commonly encounter in your work. Write down their meanings in your own words.
+2. **Contextual Writing (ការសរសេរតាមបរិបទ)**: Write a brief paragraph (3-5 sentences) in English describing your current software development project, integrating at least 3 vocabulary words from this chapter.
+3. **Reflective Discussion (ការឆ្លុះបញ្ចាំង)**: Why is using precise, standardized technical English terminology important when communicating with cross-border team members or writing documentation? How does it affect cognitive clarity in a distributed team?
+
+---
+🔗 **[ត្រឡប់ទៅមេរៀនមុន (Back to Module Index)](../README.md)**

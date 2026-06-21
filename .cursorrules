@@ -1,0 +1,57 @@
+# Cursor AI Guidelines - iblogger-english
+
+You are an expert curriculum designer and software developer. When editing or creating files in this repository, follow these rules:
+
+## 1. Directory Structure & Naming
+* Maintain the numbering prefix format for modules: `01-grammar-foundations`, `02-pronunciation-phonetics`, etc.
+* Keep files organized inside their respective modules with a standard `README.md` file acting as the index.
+
+## 2. Core Curriculum Rules (Cycology & Philosophy)
+* **Psychological Spacing & Retrieval (Cycology)**: Make sure all lessons end with a `### 🧠 ការអនុវត្ត និងការឆ្លុះបញ្ចាំង (Practice & Reflection)` section containing active recall exercises. Periodically interleave 1-2 terms from past chapters to create spaced repetition memory loops.
+* **Cognitive Scaffolding**: Keep content modular. Introduce a maximum of 3 grammar rules or 10 technical terms per file to prevent working memory overload.
+* **Psychological Safety (Compilation Analogy)**: Frame speech and grammar mistakes as code compiler syntax/runtime bugs. Explain *why* they happen logically (e.g. L1 structural transfer) to lower learning anxiety.
+* **Socratic Inquiry**: Begin each lesson with an open, thought-provoking question prompting developers to reflect on the conceptual need for a standard or format.
+* **Pragmatism & Stoic Resilience**: Prioritize vocabulary and grammar directly used in IT workflows (commits, reviews). Model objective, factual, and calm expressions in templates (Stoic emotional control during incidents/outages).
+* **Hermeneutic Symmetry**: Ensure every Khmer paragraph is paired with its English translation block or inline translation to help the student map specific components back to the overall context.
+* **Epistemic Scaffolding**: Structure modules to build from baseline linguistic rules (Module 1/2) to technical application (Module 6) and spontaneous standups/incident reports (Module 7).
+
+
+## 3. Formatting & Styling
+* **Mermaid Configuration**: Always initialize Mermaid blocks with the custom dark mode theme injection:
+  ```mermaid
+  %%{init: {
+    'theme': 'dark',
+    'themeVariables': {
+      'background': '#1e1e1e',
+      'primaryTextColor': '#ffffff',
+      'lineColor': '#a0a0a0',
+      'actorBkg': '#2c3e50',
+      'actorBorder': '#34495e',
+      'actorTextColor': '#ffffff',
+      'noteBkgColor': '#2c3e50',
+      'noteTextColor': '#ffffff',
+      'noteBorderColor': '#34495e'
+    },
+    'themeCSS': 'svg { background-color: #1e1e1e !important; padding: 1rem !important; border-radius: 8px !important; } .edgeLabel rect { fill: #1e1e1e !important; } text, tspan { fill: #ffffff !important; } .messageText, .messageText tspan, .signalText, .signalText tspan { fill: #ffffff !important; stroke: #1e1e1e !important; stroke-width: 3px !important; paint-order: stroke fill !important; stroke-linejoin: round !important; }'
+  }}%%
+  ```
+* **Mermaid Wrapping**: Label node texts with `<br/>` every 2-3 words, keeping strings under 25 characters. Use `#e74c3c` (Red) for failures/errors, `#27ae60` (Green) for successes, and `#2980b9` (Blue) for standard flows.
+* **TOC Anchors**: When building Table of Contents, use explicit HTML anchors like `<a id="0"></a>` and number them sequentially.
+* **Backlink standard**: Every sub-lesson must end with: `🔗 **[ត្រឡប់ទៅមេរៀនមុន (Back to Module Index)](../README.md)**` or similar.
+
+## 4. Khmer Unicode & Spacing
+* **Unicode Order**: Consonant ➔ Subscript (`្` + Subscript Consonant) ➔ Dependent Vowel ➔ Diacritic.
+* **ZWSP (`\u200B`)**: Use Zero-Width Spaces between word boundaries inside a single Khmer clause.
+* **Regular Spaces**: Use spaces only between clauses/sentences or list items.
+
+## 5. Audit Command
+* Always run `python3 scripts/audit_lessons.py` after editing or creating markdown content to verify compliance.
+
+## 6. Agent Self-Reflection & Metacognitive Protocol
+* **Metacognitive Review**: Before presenting modifications or new lessons, the AI must perform a mental walk-through:
+  1. *Did I keep the bilingual segments aligned block-by-block?*
+  2. *Are there less than 3 grammar rules or 10 technical terms introduced?*
+  3. *Does the practice section trigger active recall?*
+  4. *Did I resolve any subscript/vowel ordering bugs?*
+* **Linguistic Symmetry**: Inspect the semantic integrity of tech translation. Ensure it sounds like a professional developer's workspace discussion, not an overly literal translation.
+* **Pre-commit Verification**: Run `python3 scripts/audit_lessons.py` and fix all violations before concluding.
