@@ -38,7 +38,7 @@
             </svg>
             <span class="brand-name">openkuide</span>
           </a>
-          <button @click="toggleSidebar" class="toggle-btn desktop-only" title="Collapse Sidebar">
+          <button @click="toggleSidebar" class="toggle-btn" title="Collapse Sidebar">
             <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
             </svg>
@@ -77,6 +77,11 @@
       <!-- Main Contents wrapper -->
       <div :class="['main-wrapper', { 'sidebar-closed': !isSidebarOpen }]">
         
+        <!-- Scroll Progress Bar (Ocular feedback indicator) -->
+        <div class="scroll-progress-container">
+          <div class="scroll-progress-bar" :style="{ width: scrollProgress + '%' }"></div>
+        </div>
+
         <!-- Navigation Header bar -->
         <header class="top-nav">
           <button @click="toggleSidebar" class="toggle-btn" title="Toggle Navigation Menu">

@@ -107,6 +107,75 @@ export function getMarkdownPath(hash) {
   return path.split("#")[0] || "README.md";
 }
 
+/**
+ * Recursively walks the text nodes of a container and wraps Khmer text blocks
+ * in a <span class="kh"> element to apply specialized visual typography.
+ * @param {HTMLElement} container
+ */
+export function applyKhmerTypography(container) {
+  if (!container) return;
+
+  const khmerRegex = /[\u1780-\u17FF]+/g;
+  const textNodes = [];
+  
+  // Walk text nodes securely
+  const walk = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, null, false);
+  let node;
+  while ((node = walk.nextNode())) {
+    const parent = node.parentNode;
+    if (!parent) continue;
+    
+    // Ignore text nodes in code snippets, stylesheets, scripts, or already wrapped elements
+    const shouldSkip = (
+      parent.tagName === 'SCRIPT' || 
+      parent.tagName === 'STYLE' || 
+      parent.tagName === 'CODE' || 
+      parent.classList.contains('kh') ||
+      parent.closest('code') || 
+      parent.closest('pre')
+    );
+    
+    if (shouldSkip) continue;
+    
+    if (khmerRegex.test(node.nodeValue)) {
+      textNodes.push(node);
+    }
+  }
+
+  // Splitting nodes and wrapping Khmer text segments in span.kh
+  for (const textNode of textNodes) {
+    const parent = textNode.parentNode;
+    if (!parent) continue;
+
+    const text = textNode.nodeValue;
+    const fragment = document.createDocumentFragment();
+    
+    // Matches runs of Khmer characters, subscripts, vowels, diacritics, and internal spacing
+    const regex = /([\u1780-\u17FF\u200B]+(?:[\s\u200B\u17D2]+[\u1780-\u17FF\u200B]+)*)/g;
+    let lastIndex = 0;
+    let match;
+
+    while ((match = regex.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        fragment.appendChild(document.createTextNode(text.substring(lastIndex, match.index)));
+      }
+      
+      const span = document.createElement("span");
+      span.className = "kh";
+      span.textContent = match[0];
+      fragment.appendChild(span);
+      
+      lastIndex = regex.lastIndex;
+    }
+
+    if (lastIndex < text.length) {
+      fragment.appendChild(document.createTextNode(text.substring(lastIndex)));
+    }
+
+    parent.replaceChild(fragment, textNode);
+  }
+}
+
 // Mount the Vue App if running in a browser environment
 if (typeof window !== "undefined" && window.Vue) {
   const { createApp, ref, computed, onMounted } = window.Vue;
@@ -119,6 +188,7 @@ if (typeof window !== "undefined" && window.Vue) {
       const isSidebarOpen = ref(true);
       const isLoading = ref(false);
       const isMobileMenuOpen = ref(false);
+      const scrollProgress = ref(0);
 
       // Render markdown using Marked.js and sanitize with DOMPurify
       const renderedHtml = computed(() => {
@@ -135,7 +205,6 @@ if (typeof window !== "undefined" && window.Vue) {
           let text = await res.text();
 
           // Transform relative links in markdown to work with hash-based routing
-          // matches e.g. [text](relative-link.md) but skips http/https/mailto/#
           text = text.replace(/\[([^\]]+)\]\(((?!http|https|mailto|#)[^)]+)\)/g, (match, textPart, linkPart) => {
             const resolved = resolveRelativeLink(path, linkPart);
             return `[${textPart}](#/${resolved})`;
@@ -144,10 +213,14 @@ if (typeof window !== "undefined" && window.Vue) {
           currentContent.value = text;
           currentPath.value = path;
           
-          // Re-render Mermaid diagrams after DOM updates
+          // Re-render Mermaid diagrams and apply Khmer typography after DOM updates
           setTimeout(() => {
             if (window.mermaid) {
               window.mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+            }
+            const container = document.querySelector('.markdown-body');
+            if (container) {
+              applyKhmerTypography(container);
             }
           }, 150);
           
@@ -175,6 +248,16 @@ if (typeof window !== "undefined" && window.Vue) {
         isMobileMenuOpen.value = !isMobileMenuOpen.value;
       };
 
+      // Updates reading scroll progress bar
+      const handleScroll = () => {
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        if (docHeight > 0) {
+          scrollProgress.value = Math.min((window.scrollY / docHeight) * 100, 100);
+        } else {
+          scrollProgress.value = 0;
+        }
+      };
+
       onMounted(async () => {
         // Fetch roadmap index to construct sidebar
         try {
@@ -187,9 +270,10 @@ if (typeof window !== "undefined" && window.Vue) {
           console.error("Failed to load navigation menu", e);
         }
 
-        // Initialize and listen to routes
+        // Initialize and listen to routes & scroll events
         handleRouteChange();
         window.addEventListener("hashchange", handleRouteChange);
+        window.addEventListener("scroll", handleScroll);
       });
 
       return {
@@ -199,6 +283,7 @@ if (typeof window !== "undefined" && window.Vue) {
         isSidebarOpen,
         isLoading,
         isMobileMenuOpen,
+        scrollProgress,
         toggleSidebar,
         toggleMobileMenu
       };
